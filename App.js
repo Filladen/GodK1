@@ -36,8 +36,8 @@ export default function App() {
     // Initialize other firebase products here
   }
 
-  /* Man kan også lave screens og components her i stedet for at have dem i forskellige filer. 
-  Dette er dog kun anbefalet til små projekter, da det ellers hurtigt kan blive uoverskueligt.
+  /* screens og components er lavet her i stedet for at have dem i forskellige filer. 
+  da dette er et lille projekt... for nu :) 
   */
 
   const Stack = createStackNavigator();
