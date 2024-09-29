@@ -167,7 +167,7 @@ function Add_edit_job({ navigation, route }) {
 }
 
 export default Add_edit_job;
-
+//lækkerier 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
