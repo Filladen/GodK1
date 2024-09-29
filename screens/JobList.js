@@ -38,7 +38,7 @@ function JobList({ navigation }) {
   }
 
   const handleSelectJob = (id) => {
-    /*Her søger vi direkte i vores array af biler og finder bil objektet som matcher idet vi har tilsendt*/
+    /*Her søger vi direkte i vores array af jobs og finder job objektet som matcher idet vi har tilsendt*/
     const job = Object.entries(jobs).find((job) => job[0] === id /*id*/);
     navigation.navigate("Job Details", { job });
   };
@@ -50,7 +50,7 @@ function JobList({ navigation }) {
   return (
     <FlatList
       data={jobArray}
-      // Vi bruger jobKeys til at finde ID på den aktuelle bil og returnerer dette som key, og giver det med som ID til JobListItem
+      // Vi bruger jobKeys til at finde ID på den aktuelle job og returnerer dette som key, og giver det med som ID til JobListItem
       keyExtractor={(item, index) => jobKeys[index]}
       renderItem={({ item, index }) => {
         return (
